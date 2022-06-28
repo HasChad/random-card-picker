@@ -1,10 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
+void values();
+void suits();
+
 int main()
 {
 	srand(clock());
 
+	values();
+	printf(" of ");
+	suits();
+}
+
+void values()
+{
 	switch(rand()%12+1)
 	{
 		case 1:
@@ -59,9 +70,10 @@ int main()
 		printf("King");
 		break;
 	}
+}
 
-	printf(" of ");
-
+void suits()
+{
 	switch(rand()%3)
 	{
 		case 0:
