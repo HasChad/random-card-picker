@@ -12,84 +12,36 @@ int main()
 	values();
 	printf(" of ");
 	suits();
+	printf("\n");
 }
 
 void values()
 {
-	switch(rand()%12+1)
-	{
-		case 1:
-		printf("Ace");
-		break;
+	const char *a[13];
+	a[0] = "Ace";
+	a[1] = "2";
+	a[2] = "3";
+	a[3] = "4";
+	a[4] = "5";
+	a[5] = "6";
+	a[6] = "7";
+	a[7] = "8";
+	a[8] = "9";
+	a[9] = "10";
+	a[10] = "Jake";
+	a[11] = "Queen";
+	a[12] = "King";
 
-		case 2:
-		printf("2");
-		break;
-
-		case 3:
-		printf("3");
-		break;
-
-		case 4:
-		printf("4");
-		break;
-
-		case 5:
-		printf("5");
-		break;
-
-		case 6:
-		printf("6");
-		break;
-
-		case 7:
-		printf("7");
-		break;
-
-		case 8:
-		printf("8");
-		break;
-
-		case 9:
-		printf("9");
-		break;
-
-		case 10:
-		printf("10");
-		break;
-
-		case 11:
-		printf("Jack");
-		break;
-
-		case 12:
-		printf("Queen");
-		break;
-
-		case 13:
-		printf("King");
-		break;
-	}
+	printf("%s", a[rand()%13]);
 }
 
 void suits()
 {
-	switch(rand()%3)
-	{
-		case 0:
-		printf("Spades");
-		break;
+	const char *a[4];
+	a[0] = "Spades";
+	a[1] = "Diamonds";
+	a[2] = "Hearts";
+	a[3] = "Clubs";
 
-		case 1:
-		printf("Diamonds");
-		break;
-
-		case 2:
-		printf("Hearts");
-		break;
-
-		case 3:
-		printf("Clubs");
-		break;
-	};
+	printf("%s", a[rand()%4]);
 }
