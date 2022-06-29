@@ -9,6 +9,7 @@ int main()
 {
 	srand(clock());
 
+	printf("-> ");
 	values();
 	printf(" of ");
 	suits();
